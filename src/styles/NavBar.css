@@ -1,17 +1,15 @@
 nav.navbar {
-    padding: 18px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 9999;
-    transition:  0.32s ease-in-out;
     background-color: #E96024;
   }
   nav.navbar.scrolled {
     display: none;
   }
 img{
-  height: 100px;
+  height: 80px;
 }
   nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
