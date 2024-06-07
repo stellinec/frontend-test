@@ -148,7 +148,7 @@ export const Ideas = () => {
                   <li key={post.id}>
                     <div className="post-card">
                       <div className="image-container">
-                        <img className="post-img" src={bannerImg} alt={post.title} loading="lazy" />
+                        <img className="post-img" src={post.medium_image[0].url} alt={post.title} loading="lazy" />
                       </div>
                       <div className="bottom">
                         <p>{formatPublishDate(post.published_at)}</p>
