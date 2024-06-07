@@ -16,7 +16,7 @@ export const Ideas = () => {
         const response = await fetch(`https://suitmedia-backend.suitdev.com/api/ideas?page[number]=${currentPage}&page[size]=${perPage}&append[]=small_image&append[]=medium_image&sort=${sortOption === 'newest' ? '-published_at' : 'published_at'}`, {
           method: 'GET',
           headers: {
-            'Accept': 'application/json' // Specify that we accept JSON response
+            'Accept': 'application/json' 
           }
         });
         if (!response.ok) {
@@ -24,7 +24,7 @@ export const Ideas = () => {
         }
         const data = await response.json();
         
-        setPosts(data.data); // Assuming the posts data is under the 'data' key
+        setPosts(data.data); 
         setTotalPages(data.meta.last_page);
         setTotalPosts(data.meta.total)
         console.log(data);
