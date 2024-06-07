@@ -1,0 +1,69 @@
+nav.navbar {
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition:  0.32s ease-in-out;
+    background-color: #E96024;
+  }
+  nav.navbar.scrolled {
+    display: none;
+  }
+img{
+  height: 100px;
+}
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    margin-left: 50px;
+    padding: 10px 0px;
+    font-size: 18px;
+    transition: all;
+    transition-duration: 300ms;
+    border-radius: 2px;
+    border-bottom: 3px solid rgba(0,0,0,0);
+  }
+  nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+      opacity: 1;
+      border-bottom: 3px solid white;
+  }
+  span.navbar-text {
+      display: flex;
+      align-items: center;
+  }
+  
+  nav.navbar .navbar-toggler:active,
+  nav.navbar .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+     
+  }
+  nav.navbar .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 2px solid #fff;
+    transition: all 300ms linear;
+    top: -8px;
+  }
+  nav.navbar .navbar-toggler-icon:after,
+  nav.navbar .navbar-toggler-icon:before {
+      width: 24px;
+      position: absolute;
+      height: 2px;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      content: '';
+      z-index: 2;
+      transition: all 300ms linear;
+  }
+  nav.navbar .navbar-toggler-icon:after {
+      top: 8px;
+  }
+  .nav-link.navbar-link{
+    margin-bottom: 15px;
+  }
