@@ -45,7 +45,6 @@ img{
     position: relative;
     border-bottom: 2px solid #fff;
     transition: all 300ms linear;
-    top: -8px;
   }
   nav.navbar .navbar-toggler-icon:after,
   nav.navbar .navbar-toggler-icon:before {
@@ -64,4 +63,8 @@ img{
   }
   .nav-link.navbar-link{
     margin-bottom: 15px;
+  }
+  button.navbar-toggler.collapsed, 
+  button.navbar-toggler{
+    border: none;
   }

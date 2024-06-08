@@ -162,3 +162,9 @@ button.active {
 .banner-text p{
   color: white;
 }
+@media (max-width:768px) {
+	.information-top{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
